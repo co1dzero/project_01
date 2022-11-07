@@ -3,6 +3,7 @@
     <h1>left组件</h1>
     <button @click="getInfo">发送GET请求</button>
     <button @click="gotoGY">通过push跳转到关于</button>
+    <hr />
     <button @click="gotoGY2">通过replace跳转到关于</button>
   </div>
 </template>
