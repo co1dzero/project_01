@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <h1>App 根组件</h1>
+    <h1>App 1根组件</h1>
     <!-- 当安装了 vue-router 后 就可以使用 router-link 来替代普通的 a 链接了 -->
     <!-- <a href="#/left">左</a> -->
     <!-- <router-link to="/Home">首页</router-link>
@@ -22,8 +22,8 @@ import Echarts from '@/components/Echarts.vue'
 export default {
   name: 'App',
   components: {
-    Echarts,
-  },
+    Echarts
+  }
 }
 </script>
 
