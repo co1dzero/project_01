@@ -1,17 +1,15 @@
 <template>
-  <div class="back1">
-    <h1>tab1组件</h1>
-  </div>
+  <a-dropdown :trigger="['click']">
+    <a class="ant-dropdown-link" @click="e => e.preventDefault()"> Click me <a-icon type="down" /> </a>
+    <a-menu slot="overlay">
+      <a-menu-item key="0">
+        <a href="http://www.alipay.com/">1st menu item</a>
+      </a-menu-item>
+      <a-menu-item key="1">
+        <a href="http://www.taobao.com/">2nd menu item</a>
+      </a-menu-item>
+      <a-menu-divider />
+      <a-menu-item key="3"> 3rd menu item </a-menu-item>
+    </a-menu>
+  </a-dropdown>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style lang="less" scoped>
-.back1 {
-  background-color: aqua;
-  min-height: 200px;
-  flex: 1;
-}
-</style>

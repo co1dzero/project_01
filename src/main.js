@@ -3,6 +3,9 @@ import App from './App.vue'
 import axios from 'axios'
 // 导入路由模块，目的：拿到路由的实例对象
 import router from '@/router/index.js'
+import { installAnt } from './utils/ant-demand'
+// 加载ant-design-vue
+installAnt()
 
 Vue.config.productionTip = false
 
@@ -22,8 +25,8 @@ Vue.directive('color', (el, binding) => {
 })
 
 new Vue({
-  render: (h) => h(App),
+  render: h => h(App),
   // 在 vue 项目中，要想把路由用起来，必须要把路由的实例对象，通过下面的方法进行挂载
   // router：路由的实例对象
-  router,
+  router
 }).$mount('#app')
